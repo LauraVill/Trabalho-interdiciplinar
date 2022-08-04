@@ -8,21 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/produtos.css">
     
-</head>
-    <!-- custom css file link  -->
-  
+</head> 
 <body onload="javascript:carregando()">
-     <header class="header">
+    <header class="header">
         <img class="logo" src="Imagens logo e rodapé/logo certa.jpg" alt="logo-1">
-   
+        
         <nav class="caixa">
             <a href="index.html">Início</a>
             <a href="produtos.html">Produtos</a>
-            <a href="contato.html">Contatos</a>
-   
+            <a href="contato.html">Contatos</a>       
         </nav>
-        
 </header>
+<main class="filtro">
+    <section class="filtros">
+    
+     Produto : <input type="text" id="inDescricao">
+     Categoria : <input type="text"id="inCategoria">
+     Marca : <input type="text" id="inMarca">
+     Preço mínimo : <input type="number" id="inPrecoMin">
+     Preço maxímo : <input type="number" id="inPrecoMax">
+     <input type="button" id="btMostrar" value="Mostrar">
+    </section>
+
     <table>
         <thead>
             <tr>
@@ -36,6 +43,6 @@
         <tbody class="corpoTabela"></tbody>
     </table>    
  </main>
-
+ <script src="Tabela filtro/index.js"></script>
 <script src="js/produtos.js"></script>
 </body>

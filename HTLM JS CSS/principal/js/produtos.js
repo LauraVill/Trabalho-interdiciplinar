@@ -41,10 +41,10 @@ function filtro(){
     var precoMax = inPrecoMax.value;
     
    corpoTabela.innerText=""
-    for(let i=0;i<vetProduto.length;i++){
-            if( vetCategoria[i].indexOf(categoria)!=-1 && vetEspecificacao[i].indexOf(descricao)!=-1 && valor[i]>precoMin){
-            
+   for(let i=0;i<vetProduto.length;i++){
+    if((vetCategoria[i].indexOf(categoria)!=-1|| categoria=="") &&( vetEspecificacao[i].indexOf(marca)!=-1 || marca=="")&& (vetProduto[i].indexOf(descricao)!=-1 || descricao =="" )&& (valor[i]>precoMin|| precoMin=="") && (valor[i]<precoMax|| precoMax=="")){
             var tr = document.createElement('tr');
+
             var tdProduto= document.createElement('td');
             var tdCategoria= document.createElement('td');
             var tdEspecificacao= document.createElement('td'); 
@@ -104,4 +104,4 @@ function carregando(){
     }  
 }
 
-// btMostrar.addEventListener("click", filtro)
+btMostrar.addEventListener("click", filtro)

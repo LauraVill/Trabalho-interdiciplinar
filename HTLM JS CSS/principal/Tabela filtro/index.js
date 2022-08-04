@@ -31,7 +31,6 @@ function carregando(){
         // var tdImagem = document.createElement("td");
         // var img = document.createElement("img")
         // img.src = "../../imgProdutos/img" + i + ".jpg";
-       
      
         var tdProduto= document.createElement('td');
         var tdCategoria= document.createElement('td');
